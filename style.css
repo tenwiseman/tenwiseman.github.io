@@ -1,0 +1,153 @@
+body {
+    background-image: url("./margin.jpg");
+    background-repeat: repeat-y;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14pt;
+}
+
+
+#logo {
+    margin: 20px;
+}
+
+#index {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px gray solid;
+    border-left: 1px gray solid;
+    float: right;
+    margin: 10px;
+    width: 400px;
+    height: 200px;
+}
+
+#index h2::before { 
+    color: white;
+    background-color: grey;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 2px;
+    font-size: 12pt;
+    font-weight: bold;
+
+}
+
+#sideA h2::before {
+    content: 'A';
+}
+
+#sideB h2::before {
+    content: 'B';
+}
+
+
+
+
+
+#index h2 { 
+    border-right: 1px grey solid;
+    border-bottom: 1px grey solid;
+    margin:0;
+    padding-top: 3px;
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+#index ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+
+#index li {
+    border-right: 1px gray solid;
+    border-bottom: 1px gray solid;
+    padding: 4px 0 0 10px;
+    font-size: 12pt;
+}
+
+#index li a {
+    text-decoration: none;
+}
+
+#index::after {
+    float: clear;
+}
+
+
+#main {
+    margin: 0px 10px 0px 240px;
+}
+
+#nav {
+    border: 2px solid brown;
+    float:right;
+    width: 100px;
+    height: 500px;
+}
+
+.home::before {
+    content: '\25B2';
+    font-size: 32pt;
+}
+
+.prev::before {
+    content: '\25C4';
+    font-size: 32pt;
+}
+
+.next::before {
+    content: '\25BA';
+    font-size: 32pt;
+}
+
+
+
+
+#nav a {
+    display:block;
+    border: 2px solid gray;
+    text-decoration: none;
+
+}
+
+#side {
+    float: right;
+    margin: 40px;
+    width: 400px;
+}
+
+#below {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#footer {
+    border: 2px solid brown;
+    background-color: lightgray;
+    height: 100px;
+}
+
+img {
+    display:block;
+} 
+
+.photo img {
+    width: 300px;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > img {
+    transform: scale(3);
+    cursor: zoom-out;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+

@@ -1,0 +1,96 @@
+body {
+    background-image: url("./margin.jpg");
+    background-repeat: repeat-y;
+    background-position-x: right;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14pt;
+    background-color: lightgray;
+}
+
+#gridlayout {
+    display: grid;
+    grid-template-rows: 50px 500px;
+    grid-template-columns: 1fr 210px;
+}
+
+#main {
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+}
+
+#remotething {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    margin-left: 30px;
+    width: 152px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 10px 40px 5px 170px 5px 42px 5px 170px 5px 42px;
+    grid-template-columns: 8px 42px 5px 42px 5px 42px 8px;
+
+    background-image: url("i0/fireremote.png");
+    background-repeat: no-repeat;
+}
+
+#rtsearch {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+#rtfolders {
+    background-color: lightskyblue;
+    grid-row: 4 / 5;
+    grid-column: 2 / 7;
+}
+
+#rtfolders ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style: none;
+}
+
+#rtfolders li {
+    font-size: smaller;
+    margin: 0;
+    padding: 3px;
+    border: 1px blue solid;
+}
+
+
+
+
+#rtback {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+}
+
+#rthome {
+    grid-row: 6 / 7;
+    grid-column: 4 / 5;
+}
+
+#rtindex {
+    grid-row: 6 / 7;
+    grid-column: 6 / 7;
+}
+
+#rtitems {
+    border: 1px solid orange;
+    grid-row: 8 / 9;
+    grid-column: 2 / 7;
+}
+
+#rtprev {
+    grid-row: 10 / 11;
+    grid-column: 2 / 3;
+}
+
+#rtnext {
+    grid-row: 10 / 11;
+    grid-column: 6 / 7;
+}
+
